@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Checking your records
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-l">Step 4 of 5</span>
+      <h1 class="govuk-heading-l">
+        Checking your records
+      </h1>
+
+      <form class="form" action="/upload-confirmation" method="post">
+
+        <p>Please wait whilst your records are being checked. This may take a few minutes. </p>
+
+        <p>The following checks are now being performed:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Anti-virus scanning</li>
+            <li>Identifying file formats</li>
+            <li>Validating data integrity</li>
+          </ul>
+
+        <p>
+
+          For more information on these checks, please see our <a class="govuk-link" href="#">FAQs</a> to this service.
+        </p>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

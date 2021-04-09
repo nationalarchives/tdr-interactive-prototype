@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Uploading your records
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-l">Step 3 of 5</span>
+      <h1 class="govuk-heading-l">
+        Uploading records
+      </h1>
+
+      <form class="form" action="/progress-checks" method="post">
+
+        <p>Do not close your browser whilst your files are being uploaded. This may take a few minutes.</p>
+
+        <p>Progress bar to follow</p>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Transfer complete</h1>
+        <div class="govuk-panel__body">
+          Your records have now been transferred to The National Archives.
+        </div>
+      </div>
+
+      <p class="govuk-body">
+        We have now received your records. Please do not delete the original files you uploaded until you are notified that your records have been preserved.
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>We will contact you via email within 90 days. If you do not receive an email, please contact us.</p>
+
+      <a href="/dashboard" role="button" draggable="false" class="govuk-button" data-module="govuk-button">
+        Return to start
+      </a>
+
+
+    </div>
+  </div>
+
+{% endblock %}

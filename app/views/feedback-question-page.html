@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Feedback questions
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Give feedback on the Transfer Digital Records service
+    </h1>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="satisfactory-level-hint">
+        <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+          Select what your feedback is about
+        </legend>
+        <div class="govuk-radios">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="very-satisfied" name="very-satisfied" type="radio" value="very-satisfied">
+            <label class="govuk-label govuk-radios__label" for="very-satisfied">
+              Uploading and checking records
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="satisfied" name="satisfied" type="radio" value="satisfied">
+            <label class="govuk-label govuk-radios__label" for="satisfied">
+              Page design and structure
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="neither" name="neither" type="radio" value="neither">
+            <label class="govuk-label govuk-radios__label" for="neither">
+              General feedback about this service
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label govuk-!-font-weight-bold" for="more-detail">
+        Enter your feedback
+      </label>
+      <div id="more-detail-hint" class="govuk-hint govuk-!-font-size-16">
+        Do not include any personal information such as sign-in details.
+      </div>
+      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" style="margin-bottom: 5px"></textarea>
+      <span class="govuk-body-s govuk-!-font-weight-bold">You have 1000 characters remaining</span>
+    </div>
+
+    <button class="govuk-button" data-module="govuk-button">
+      Send feedback
+    </button>
+
+  </div>
+</div>
+
+{% endblock %}

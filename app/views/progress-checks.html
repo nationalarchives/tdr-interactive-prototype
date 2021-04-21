@@ -14,10 +14,24 @@
         Checking your records
       </h1>
 
+      <div class="showBanner">
+        <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+          <div class="govuk-notification-banner__header">
+            <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+              Success
+            </h2>
+          </div>
+          <div class="govuk-notification-banner__content">
+            <h3 class="govuk-notification-banner__heading">
+              Your records have passed our checks.
+            </h3>
+            <p class="govuk-body">Please click continue to proceed with your transfer.</p>
+          </div>
+        </div>
+      </div>
+
       <form class="form" action="/upload-confirmation" method="post">
-
         <p>Please wait whilst your records are being checked. This may take a few minutes. </p>
-
         <p>The following checks are now being performed:</p>
           <ul class="govuk-list govuk-list--bullet">
             <li>Anti-virus scanning</li>
@@ -30,7 +44,7 @@
           For more information on these checks, please see our <a class="govuk-link" href="/faq">FAQs</a> to this service.
         </p>
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+        <button class="govuk-button" data-module="govuk-button" >Continue</button>
 
       </form>
 

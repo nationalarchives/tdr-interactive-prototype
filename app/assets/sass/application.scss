@@ -143,3 +143,17 @@ $govuk-assets-path: '/govuk/assets/';
 0% { width: 0; }
 100% { width: 100%; }
 }
+
+// progress-checks.html
+// .hide {
+//   display: none;
+// }
+.showBanner {
+  animation: showBlock 0s 5s forwards;
+  visibility: hidden;
+}
+
+@keyframes showBlock {
+  to { visibility: visible; }
+}
+

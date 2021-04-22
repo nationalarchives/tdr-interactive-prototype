@@ -40,15 +40,19 @@
       </fieldset>
     </div>
 
-    <div class="govuk-form-group">
-      <label class="govuk-label govuk-!-font-weight-bold" for="more-detail">
-        Enter your feedback
-      </label>
-      <div id="more-detail-hint" class="govuk-hint govuk-!-font-size-16">
-        Do not include any personal information such as sign-in details.
+    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="1000">
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-font-weight-bold" for="label-as-page-heading">
+          Enter your feedback
+        </label>
+        <div id="more-detail-hint" class="govuk-hint">
+          Do not include any personal information such as sign-in details.
+        </div>
+        <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="label-as-page-heading" rows="5" aria-describedby="label-as-page-heading-info"></textarea>
       </div>
-      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" style="margin-bottom: 5px"></textarea>
-      <span class="govuk-body-s govuk-!-font-weight-bold">You have 1000 characters remaining</span>
+      <div id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+        You have 1000 characters remaining
+      </div>
     </div>
 
     <button class="govuk-button" data-module="govuk-button">

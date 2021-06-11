@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Upload and checks done
+  Result of checks
 {% endblock %}
 
 {% block content %}
@@ -11,21 +11,9 @@
 
       <span class="govuk-caption-l">Step 4 of 5</span>
       <h1 class="govuk-heading-l">
-        Checking your records
+        Results of your checks
       </h1>
 
-      <p class="govuk-body govuk-!-margin-top-6">The following checks are now being performed:</p>
-      <ul class="govuk-list govuk-list--bullet">
-        <li>Anti-virus scanning</li>
-        <li>Identifying file formats</li>
-        <li>Validating data integrity</li>
-      </ul>
-      <p class="govuk-body">For more information on these checks, please see our <a class="govuk-link" href="/faq">FAQ</a> to this service.</p>
-
-
-      <h3 class="govuk-heading-s">The result of the checks will be displayed below.</h3>
-
-      <div class="showBanner">
         <div class="govuk-success-summary" aria-labelledby="success-summary-title" role="alert" tabindex="-1" data-module="govuk-success-summary">
           <h2 class="govuk-success-summary__title" id="success-summary-title">
            Success
@@ -39,7 +27,6 @@
         <a href="summary.html" role="button" draggable="false" class="govuk-button"  data-module="govuk-button">
           Continue
         </a>
-      </div>
 
     </div>
   </div>

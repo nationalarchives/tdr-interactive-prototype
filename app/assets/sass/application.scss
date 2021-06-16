@@ -212,9 +212,12 @@ $govuk-assets-path: '/govuk/assets/';
 .showBanner {
   animation: showBlock 0s 5s forwards;
   visibility: hidden;
+  height:0;
 }
 
 @keyframes showBlock {
-  to { visibility: visible; }
+  to { 
+    visibility: visible; 
+    height: 100%;
+  }
 }
-

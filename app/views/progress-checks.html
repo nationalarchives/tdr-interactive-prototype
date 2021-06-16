@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Checking your records
+  Checking records
 {% endblock %}
 
 {% block content %}
@@ -15,15 +15,18 @@
       </h1>
 
       <form class="form" action="/upload-confirmation" method="post">
-        <p>Please wait whilst your records are being checked. This may take a few minutes.</p>
+        
+        <p class="govuk-body">Please wait whilst your records are being checked. This may take a few minutes. </p>
+        <p class="govuk-body">The following checks are now being performed:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>Anti-virus scanning</li>
+            <li>Identifying file formats</li>
+            <li>Validating data integrity</li>
+          </ul>
 
-        <p class="govuk-body govuk-!-margin-top-6">The following checks are now being performed:</p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>Anti-virus scanning</li>
-          <li>Identifying file formats</li>
-          <li>Validating data integrity</li>
-        </ul>
-        <p class="govuk-body govuk-!-margin-bottom-8">For more information on these checks, please see our <a class="govuk-link" href="/faq">FAQ</a> to this service.</p>
+        <p class="govuk-body govuk-!-margin-bottom-7">For more information on these checks, please see our
+          <a class="govuk-link" href="/faq">FAQ</a> to this service.
+        </p>
 
         <div class="showBanner">
           <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
@@ -33,15 +36,15 @@
               </h2>
             </div>
             <div class="govuk-notification-banner__content">
-              <p class="govuk-notification-banner__heading">
+              <h3 class="govuk-notification-banner__heading">
                 Your records have been checked.
-              </p>
+              </h3>
               <p class="govuk-body">Please click 'Continue' to see your results.</p>
             </div>
           </div>
         </div>
 
-        <button class="govuk-button" id="next-step-btn" data-module="govuk-button" disabled="disabled">Continue</button>
+        <button class="govuk-button" id="next-step-btn" data-module="govuk-button" disabled>Continue</button>
 
       </form>
 
@@ -49,10 +52,10 @@
   </div>
 
 
-<script type="text/javascript">
-  setTimeout(() => {
-    document.getElementById("next-step-btn").disabled = false;
-  }, 5000);
-</script>
+  <script type="text/javascript">
+    setTimeout(() => {
+      document.getElementById("next-step-btn").disabled = false;
+    }, 5000);
+  </script>
 
 {% endblock %}

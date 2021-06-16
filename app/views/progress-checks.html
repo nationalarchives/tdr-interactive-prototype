@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Checking your records
+  Checking records
 {% endblock %}
 
 {% block content %}
@@ -15,17 +15,16 @@
       </h1>
 
       <form class="form" action="/upload-confirmation" method="post">
-        <p>Please wait whilst your records are being checked. This may take a few minutes. </p>
-        <p>The following checks are now being performed:</p>
+        <p class="govuk-body">Please wait whilst your records are being checked. This may take a few minutes. </p>
+        <p class="govuk-body">The following checks are now being performed:</p>
           <ul class="govuk-list govuk-list--bullet">
             <li>Anti-virus scanning</li>
             <li>Identifying file formats</li>
             <li>Validating data integrity</li>
           </ul>
 
-        <p>
-
-          For more information on these checks, please see our <a class="govuk-link" href="/faq">FAQ</a> to this service.
+        <p class="govuk-body govuk-!-margin-bottom-7">For more information on these checks, please see our
+          <a class="govuk-link" href="/faq">FAQ</a> to this service.
         </p>
 
         <div class="showBanner">
@@ -39,7 +38,7 @@
               <h3 class="govuk-notification-banner__heading">
                 Your records have been checked.
               </h3>
-              <p class="govuk-body">Please click continue to see your results.</p>
+              <p class="govuk-body">Please click 'Continue' to see your results.</p>
             </div>
           </div>
         </div>

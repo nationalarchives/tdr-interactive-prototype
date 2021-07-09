@@ -167,6 +167,35 @@ $govuk-assets-path: '/govuk/assets/';
   }
 }
 
+//upload-confirmation-fail-postmvp.html
+.govuk-info-summary {
+  @include govuk-text-colour;
+  @include govuk-responsive-padding(4);
+  @include govuk-responsive-margin(8, "bottom");
+
+  border: $govuk-border-width solid #1d70b8;
+
+  &:focus {
+    outline: $govuk-focus-width solid $govuk-focus-colour;
+  }
+}
+
+.govuk-info-summary__title {
+  @include govuk-font($size: 24, $weight: bold);
+
+  margin-top: 0;
+  @include govuk-responsive-margin(4, "bottom");
+}
+
+.govuk-info-summary__body {
+  @include govuk-font($size: 19);
+
+  p {
+    margin-top: 0;
+    @include govuk-responsive-margin(4, "bottom");
+  }
+}
+
 // progress-uploading.html
 .progress-bar-container {
   border-radius: 10px;
